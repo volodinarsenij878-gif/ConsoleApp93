@@ -1,0 +1,23 @@
+﻿    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Program50
+    {
+    internal class Program
+    {
+        static void Main ()
+        {
+            int x = 7;
+            string before = Convert.ToString(x, 2).PadLeft(8, '0');
+
+            x ^= 7;
+            string after = Convert.ToString(x, 2).PadLeft(8, '0');
+
+            Console.WriteLine($"До XOR: {before} ({x ^ 7})");
+            Console.WriteLine($"После x ^= 7: {after} ({x})");
+        }
+    }
+    }
